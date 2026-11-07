@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vymax"
+version = "1.0.0"
+description = "VYMAX - a clean desktop video converter with subtitles and resizing, powered by FFmpeg"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Pj B" }]
+keywords = ["ffmpeg", "video", "converter", "subtitles", "gui", "tkinter"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video :: Conversion",
+]
+
+[project.urls]
+Homepage = "https://github.com/agent-pjb/vymax"
+
+[project.gui-scripts]
+vymax = "vymax.gui:main"
+
+[tool.setuptools]
+packages = ["vymax"]
+
+[tool.setuptools.package-data]
+vymax = ["assets/*"]

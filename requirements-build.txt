@@ -1,0 +1,8 @@
+# Build-time requirements for packaging VYMAX into a standalone app.
+# VYMAX itself has NO runtime dependencies (standard library only), so there is
+# no plain requirements.txt - only this file, used when building with PyInstaller.
+#
+# Install:  pip install -r requirements-build.txt
+# Build:    see "Build a standalone executable" in README.md
+
+pyinstaller>=6.0
